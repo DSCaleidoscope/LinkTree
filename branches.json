@@ -2,18 +2,22 @@
   "branch": [
     {
       "title": "Email",
+      "type": "email", 
       "value": "dscaleidoscope@gmail.com"
     },
     {
       "title": "TikTok",
+      "type": "link",
       "value": "https://www.tiktok.com/@dscaleidoscope"
     },
     {
       "title": "Twitter",
+      "type": "link",
       "value": "https://twitter.com/DSCaleidoscope"
     },
     {
       "title": "Instagram",
+      "type": "link",
       "value": "https://www.instagram.com/d.s.caleidoscope/"
     }
   ]
