@@ -1,3 +1,4 @@
+function g(id){return document.getElementById(id);}
 function clear(){g("bbody").innerHTML = '';}
 function parse(t){branches = t;console.log(branches);}
 
