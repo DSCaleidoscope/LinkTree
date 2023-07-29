@@ -1,2 +1,2 @@
 # LinkTree
-A set of links for my profile
+A set of links for your profile
