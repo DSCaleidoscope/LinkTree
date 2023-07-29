@@ -1,6 +1,6 @@
 function clear(){g("bbody").innerHTML = '';}
-function add(t){g("bbody").innerHTML += t;}
-function parse(t){add(t);}
+function parse(t){branches = t;console.log(branches);}
+
 function fill(k){
   clear();
   readTextFile(k);
