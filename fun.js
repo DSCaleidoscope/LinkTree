@@ -5,7 +5,7 @@ function parse(t){
   branches = JSON.parse(t);
 
   //add methods
-  branches.getContent = function(){
+  branches.Branch.getContent = function(){
     if(this.type === "email"){
       console.log("email");
       return "<a href='" + this.value + "'>" + this.title + "</a>";
@@ -33,7 +33,7 @@ function addElements(){
   let x = branches.Branch.length;
 
   for(;i < x;i++){
-    add("<div id='" + branches[i].title + "' class='branch'><div class='title'>" + branches[i].getContent() + "</div></div>");
+    add("<div id='" + branches.Branch[i].title + "' class='branch'><div class='title'>" + branches.Branch[i].getContent() + "</div></div>");
   }
 }
 
