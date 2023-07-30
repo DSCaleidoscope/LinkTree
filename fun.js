@@ -42,7 +42,7 @@ function readTextFile(file){
 }
 
 
-branch.getContent = function(){
+Branch.prototype.getContent = function(){
   if(this.type === "email"){
     console.log("email");
     return "<a href='" + this.value + "'>" + this.title + "</a>";
