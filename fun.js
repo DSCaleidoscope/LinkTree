@@ -30,7 +30,7 @@ function fill(k){
 
 function addElements(){
   let i = 0;
-  let x = branches.length;
+  let x = branches.Branch.length;
 
   for(;i < x;i++){
     add("<div id='" + branches[i].title + "' class='branch'><div class='title'>" + branches[i].getContent() + "</div></div>");
