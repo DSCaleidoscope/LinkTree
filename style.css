@@ -9,3 +9,8 @@
   margin: 15px 0px;
   border-radius: 25px;
 }
+
+.branch:hover{
+  cursor:pointer;
+  background: #123456;
+}
