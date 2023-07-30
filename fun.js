@@ -58,17 +58,3 @@ function readTextFile(file){
 
   return null;
 }
-
-
-Branch.prototype.getContent = function(){
-  if(this.type === "email"){
-    console.log("email");
-    return "<a href='" + this.value + "'>" + this.title + "</a>";
-  }else if(this.type === "link"){
-    console.log("link");
-    return "<a href='" + this.value + "'>" + this.title + "</a>";
-  }else{
-    console.log("Unknown type: " + this.type);
-    return "";
-  }
-}
