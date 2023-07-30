@@ -11,10 +11,10 @@ function parse(t){
   for(;i < x;i++){
     branches.Branch[i].getURL = function(){
       if(this.type === "email"){
-        return '"mailto:' + this.value + '"';
+        return "'"mailto:" + this.value + "'";
       }
 
-      return '"' + this.value + '"';
+      return "'" + this.value + "'";
     };
     
     branches.Branch[i].getContent = function(){
