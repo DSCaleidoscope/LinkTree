@@ -9,17 +9,21 @@ function parse(t){
   let x = branches.Branch.length;
 
   for(;i < x;i++){
-   branches.Branch[i].getContent = function(){
-     if(this.type === "email"){
-       console.log("email");
-       return "<a href='mailto:" + this.value + "'>" + this.title + "</a>";
-     }else if(this.type === "link"){
-       console.log("link");
-       return "<a href='" + this.value + "'>" + this.title + "</a>";
-     }else{
-       console.log("Unknown type: " + this.type);
-       return "";
-     }
+    branches.Branch[i].getURL = function(){
+      if(this.type === "email"){
+        return "mailto:" + this.value;
+      }
+
+      return this.value;
+    };
+    
+    branches.Branch[i].getContent = function(){
+       console.log("this.type");
+       return "<a href='" + this.getURL() + "'>" + this.title + "</a>";
+    };
+
+    branches.Branch[i].getDiv = function(){
+      "<div id='" + this.title + "' class='branch'><div class='title' onclick='window.open(\""+ this.getURL() + "\")'>" + this.getContent() + "</div></div>"
     };
   }
 
@@ -38,7 +42,7 @@ function addElements(){
   let x = branches.Branch.length;
 
   for(;i < x;i++){
-    add("<div id='" + branches.Branch[i].title + "' class='branch'><div class='title'>" + branches.Branch[i].getContent() + "</div></div>");
+    add(branches.Branch[i].getDiv());
   }
 }
 
