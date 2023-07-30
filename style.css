@@ -8,6 +8,7 @@
   left: 32%;
   margin: 15px 0px;
   border-radius: 25px;
+  transition: background 2s;
 }
 
 .branch:hover{
