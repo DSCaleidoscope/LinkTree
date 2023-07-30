@@ -19,7 +19,7 @@ function parse(t){
     
     branches.Branch[i].getContent = function(){
        console.log(this.type);
-       this.title;
+       return this.title;
     };
 
     branches.Branch[i].getDiv = function(){
