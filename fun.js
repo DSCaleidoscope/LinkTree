@@ -18,12 +18,12 @@ function parse(t){
     };
     
     branches.Branch[i].getContent = function(){
-       console.log("this.type");
-       return "<a href='" + this.getURL() + "'>" + this.title + "</a>";
+       console.log(this.type);
+       this.title;
     };
 
     branches.Branch[i].getDiv = function(){
-      "<div id='" + this.title + "' class='branch'><div class='title' onclick='window.open(\""+ this.getURL() + "\")'>" + this.getContent() + "</div></div>"
+      return "<div id='" + this.title + "' class='branch'><div class='title' onclick='window.open(\""+ this.getURL() + "\")'>" + this.getContent() + "</div></div>";
     };
   }
 
