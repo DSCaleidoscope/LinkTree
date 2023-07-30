@@ -12,7 +12,7 @@ function parse(t){
    branches.Branch[i].getContent = function(){
      if(this.type === "email"){
        console.log("email");
-       return "<a href='" + this.value + "'>" + this.title + "</a>";
+       return "<a href='mailto:" + this.value + "'>" + this.title + "</a>";
      }else if(this.type === "link"){
        console.log("link");
        return "<a href='" + this.value + "'>" + this.title + "</a>";
