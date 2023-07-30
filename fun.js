@@ -23,7 +23,7 @@ function parse(t){
     };
 
     branches.Branch[i].getDiv = function(){
-      return "<div id='" + this.title + "' class='branch'><div class='title' onclick='window.open(\""+ this.getURL() + "\")'>" + this.getContent() + "</div></div>";
+      return "<div id='" + this.title + "' class='branch'><div class='title' onclick='window.open("+ this.getURL() + ")'>" + this.getContent() + "</div></div>";
     };
   }
 
