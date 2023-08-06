@@ -19,6 +19,11 @@
       "title": "Instagram",
       "type": "link",
       "value": "https://www.instagram.com/d.s.caleidoscope/"
+    },
+    {
+      "title": "Goodreads",
+      "type": "link",
+      "value": "https://www.goodreads.com/dscaleidoscope"
     }
   ]
 }
